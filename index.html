@@ -3,31 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>81 CONSULTING | 棋力というバリューを、戦略と伴走でデリバリーする</title>
-    <!-- Tailwind CSS -->
+    <title>81 CONSULTING | 棋力向上コンサルティング＆道場・教室システム支援</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        accent: '#a100ff',
-                        darkBg: '#0b0f19',
-                    },
-                    fontFamily: {
-                        serif: ['"Noto Serif JP"', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
 
-    <!-- ヘッダー -->
     <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/95 backdrop-blur border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-3">
@@ -38,22 +20,22 @@
                 <a href="#vision" class="hover:text-accent transition">Value</a>
                 <a href="#services" class="hover:text-accent transition">Capabilities</a>
                 <a href="#delivery" class="hover:text-accent transition">Delivery</a>
+                <a href="#cases" class="hover:text-accent transition">Cases</a>
                 <a href="#members" class="hover:text-accent transition">Team</a>
                 <a href="#contact" class="border border-accent px-5 py-2 text-accent hover:bg-accent hover:text-white transition">お問い合わせ</a>
             </nav>
         </div>
     </header>
 
-    <!-- ヒーローセクション -->
     <section class="pt-32 pb-24 md:pt-48 md:pb-36 border-b border-gray-800 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#a100ff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="dot-grid-bg"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <span class="text-accent uppercase text-xs tracking-[0.3em] font-semibold mb-4 block">81-Square Strategic &amp; Shogi Advisory</span>
+            <span class="text-accent uppercase text-xs tracking-[0.3em] font-semibold mb-4 block">81-Square Advisory &amp; Dojo Systems</span>
             <h1 class="font-serif text-4xl md:text-6xl font-bold tracking-tight mb-8 leading-tight">
-                「棋力」というバリューを、<br>戦略と伴走でデリバリーする。
+                「棋力」というバリューを、<br>戦略・伴走とシステムでデリバリーする。
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-12 font-light leading-relaxed">
-                81 CONSULTINGの目的は、クライアントの棋力向上そのものです。戦略策定から伴走支援までを一気通貫で担い、定跡・棋譜・実戦負荷を通じて揺るぎない勝ち筋を実装します。
+                81 CONSULTINGは、棋力向上コンサルティングと、将棋道場・教室向けシステム導入支援＆パッケージ開発を展開するファームです。戦略策定から伴走支援、現場システムの実装までを一気通貫で担います。
             </p>
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#contact" class="bg-accent text-white px-8 py-4 font-medium text-center hover:bg-purple-700 transition">ご相談・お問い合わせ</a>
@@ -62,176 +44,19 @@
         </div>
     </section>
 
-    <!-- バリュー定義セクション -->
-    <section id="vision" class="py-24 border-b border-gray-800 bg-[#0e1322]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3">Our Value</h2>
-                    <h3 class="font-serif text-3xl font-bold mb-6">一過性の知識ではなく、<br>「棋力」という成果物を届ける。</h3>
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        9×9＝81マスの盤上で求められるのは、断片的なノウハウの暗記ではなく、局面を構造化し、最適解を選び抜く地力です。私たちは戦略策定にとどまらず、現場の対局と検討に深く入り込む伴走支援によって、確かな棋力向上へと結びつけます。
-                    </p>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-darkBg p-8 border border-gray-800">
-                        <span class="text-accent text-3xl font-bold mb-2 block">01</span>
-                        <h4 class="font-bold mb-2">戦略策定</h4>
-                        <p class="text-sm text-gray-400">現状の棋力・棋風・リソースを診断し、勝てる戦法体系と成長ロードマップを設計。</p>
-                    </div>
-                    <div class="bg-darkBg p-8 border border-gray-800 mt-6">
-                        <span class="text-accent text-3xl font-bold mb-2 block">02</span>
-                        <h4 class="font-bold mb-2">伴走支援</h4>
-                        <p class="text-sm text-gray-400">計画倒れで終わらせない継続レビューと実戦フィードバックで、定着と突破を実現。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main id="sections-root">
+        <div id="section-value" data-section="./sections/value.html"></div>
+        <div id="section-capabilities" data-section="./sections/capabilities.html"></div>
+        <div id="section-delivery" data-section="./sections/delivery.html"></div>
+        <div id="section-cases" data-section="./sections/cases.html"></div>
+        <div id="section-members" data-section="./sections/team.html"></div>
+        <div id="section-contact" data-section="./sections/contact.html"></div>
+    </main>
 
-    <!-- コア支援手法セクション -->
-    <section id="services" class="py-24 border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3">Core Capabilities</h2>
-                <h3 class="font-serif text-3xl font-bold">棋力向上を実現する3つのコンサルティング手法</h3>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- 手法1 -->
-                <div class="bg-[#0e1322] p-8 border border-gray-800 hover:border-accent transition group">
-                    <div class="text-accent mb-4 font-serif text-xl font-bold">01. アグレッサー助言</div>
-                    <h4 class="text-lg font-bold mb-3">実戦負荷と変化球によるストレステスト</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        コンサルタントがアグレッサー（攻め手・揺さぶり役）として介入し、想定外の仕掛けや厳しい圧力を提示。机上の空論を排し、実戦のプレッシャー下でも崩れない判断軸と受け・カウンターの精度を鍛えます。
-                    </p>
-                </div>
-                <!-- 手法2 -->
-                <div class="bg-[#0e1322] p-8 border border-gray-800 hover:border-accent transition group">
-                    <div class="text-accent mb-4 font-serif text-xl font-bold">02. 棋譜検討コンサルティング</div>
-                    <h4 class="text-lg font-bold mb-3">対局データの構造分解と意思決定改善</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        棋譜を単なる感想戦で終わらせず、形勢の分岐点・候補手の比較・見落としのパターンを構造化。「なぜその手を選んだか」という思考プロセスを可視化し、再現性の高い意思決定へと導きます。
-                    </p>
-                </div>
-                <!-- 手法3 -->
-                <div class="bg-[#0e1322] p-8 border border-gray-800 hover:border-accent transition group">
-                    <div class="text-accent mb-4 font-serif text-xl font-bold">03. 共同 定跡POC</div>
-                    <h4 class="text-lg font-bold mb-3">仮説戦法の小規模検証と実戦実装</h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        新戦法や工夫した変化手順をいきなり本番投入するのではなく、クライアントと共同で定跡POC（Proof of Concept）を実施。狙い筋の成立条件やリスクを検証し、自社の武器として使える形に磨き込みます。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- デリバリーモデルセクション -->
-    <section id="delivery" class="py-24 border-b border-gray-800 bg-[#0e1322]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-14">
-                <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3">End-to-End Delivery</h2>
-                <h3 class="font-serif text-3xl font-bold">戦略策定から伴走支援までのデリバリーフロー</h3>
-            </div>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-darkBg p-6 border border-gray-800">
-                    <span class="text-xs text-accent font-semibold tracking-widest block mb-2">PHASE 01</span>
-                    <h4 class="font-bold text-base mb-2">アセスメント＆戦略策定</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed">棋譜・対局傾向の診断から目標設定、採用戦法・学習戦略の策定までを一気に設計。</p>
-                </div>
-                <div class="bg-darkBg p-6 border border-gray-800">
-                    <span class="text-xs text-accent font-semibold tracking-widest block mb-2">PHASE 02</span>
-                    <h4 class="font-bold text-base mb-2">共同 定跡POC</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed">仮説となる手順・作戦を共同検証し、実戦で機能する定跡・形勢判断基準を確立。</p>
-                </div>
-                <div class="bg-darkBg p-6 border border-gray-800">
-                    <span class="text-xs text-accent font-semibold tracking-widest block mb-2">PHASE 03</span>
-                    <h4 class="font-bold text-base mb-2">アグレッサー実戦＆検討</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed">厳しい仕掛けを受けるアグレッサー助言と棋譜検討を回し、弱点と盲点を潰し込む。</p>
-                </div>
-                <div class="bg-darkBg p-6 border border-gray-800">
-                    <span class="text-xs text-accent font-semibold tracking-widest block mb-2">PHASE 04</span>
-                    <h4 class="font-bold text-base mb-2">継続 伴走支援</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed">定期的な振り返りと戦略アップデートを伴走し、棋力向上の定着と次のステージへ接続。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- コンサルタント紹介セクション -->
-    <section id="members" class="py-24 border-b border-gray-800 bg-[#0b0f19]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3">Leadership &amp; Team</h2>
-                <h3 class="font-serif text-3xl font-bold">81マスを見渡すプリンシパル陣</h3>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- メンバー1 -->
-                <div class="bg-[#0e1322] border border-gray-800 group hover:border-accent transition overflow-hidden">
-                    <div class="h-64 bg-gray-800 relative overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 bg-[radial-gradient(#a100ff_1px,transparent_1px)] [background-size:12px_12px] opacity-20"></div>
-                        <span class="font-serif text-6xl text-gray-700 group-hover:text-accent transition">飛</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs text-accent uppercase tracking-wider block mb-1">Managing Partner / Strategy Lead</span>
-                        <h4 class="font-serif text-xl font-bold mb-3">佐藤 宗一郎 <span class="text-xs font-sans text-gray-400 font-normal">/ Soichiro Sato</span></h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            元奨励会三段。重厚な序盤構想と大局観を強みとし、戦法ロードマップ策定からアグレッサーとしての実戦負荷設計までを統括。
-                        </p>
-                    </div>
-                </div>
-
-                <!-- メンバー2 -->
-                <div class="bg-[#0e1322] border border-gray-800 group hover:border-accent transition overflow-hidden">
-                    <div class="h-64 bg-gray-800 relative overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 bg-[radial-gradient(#a100ff_1px,transparent_1px)] [background-size:12px_12px] opacity-20"></div>
-                        <span class="font-serif text-6xl text-gray-700 group-hover:text-accent transition">角</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs text-accent uppercase tracking-wider block mb-1">Partner / Joseki POC &amp; Analytics</span>
-                        <h4 class="font-serif text-xl font-bold mb-3">藤井 健太 <span class="text-xs font-sans text-gray-400 font-normal">/ Kenta Fujii</span></h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            探索アルゴリズムと定跡データベースの知見を活かし、棋譜の定量・構造分析および共同での定跡POC設計・検証をリード。
-                        </p>
-                    </div>
-                </div>
-
-                <!-- メンバー3 -->
-                <div class="bg-[#0e1322] border border-gray-800 group hover:border-accent transition overflow-hidden">
-                    <div class="h-64 bg-gray-800 relative overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 bg-[radial-gradient(#a100ff_1px,transparent_1px)] [background-size:12px_12px] opacity-20"></div>
-                        <span class="font-serif text-6xl text-gray-700 group-hover:text-accent transition">桂</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs text-accent uppercase tracking-wider block mb-1">Director / Coaching &amp; Endgame</span>
-                        <h4 class="font-serif text-xl font-bold mb-3">鈴木 玲子 <span class="text-xs font-sans text-gray-400 font-normal">/ Reiko Suzuki</span></h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">
-                            終盤の寄せと時間配分、伴走レビューの設計に定評あり。実戦の緊張感の中でも冷静に「詰み」を読み切る実践力を定着させる。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- お問い合わせ -->
-    <section id="contact" class="py-24 bg-[#0e1322] border-t border-gray-800">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3">Contact Us</h2>
-            <h3 class="font-serif text-3xl font-bold mb-6">棋力向上の戦略と伴走について、ご相談ください。</h3>
-            <p class="text-gray-400 mb-8">
-                定跡POCの共同検証、棋譜検討コンサルティング、アグレッサー指導や伴走プランのご相談まで、お気軽にお問い合わせください。
-            </p>
-            <a href="mailto:info@example.com" class="inline-block bg-accent text-white px-10 py-4 font-medium hover:bg-purple-700 transition">
-                お問い合わせメールを送る
-            </a>
-        </div>
-    </section>
-
-    <!-- フッター -->
     <footer class="py-12 border-t border-gray-800 text-center text-sm text-gray-500">
         <p>&copy; 2026 81 CONSULTING. All rights reserved.</p>
     </footer>
 
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
