@@ -1,52 +1,19 @@
 <section id="members" class="py-24 border-b border-gray-800 bg-[#0e1322]">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="mb-16">
-            <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3">Leadership &amp; Team</h2>
-            <h3 class="font-serif text-3xl font-bold">81マスを見渡すメンバー</h3>
+        <div class="mb-14">
+            <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3" data-copy="team.eyebrow">Team &amp; Advisors</h2>
+            <h3 class="font-serif text-3xl font-bold" data-copy="team.heading">指導・分析を担うメンバー</h3>
+            <p class="text-gray-400 text-sm mt-3 max-w-2xl" data-copy="team.lead"></p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-darkBg border border-gray-800 group hover:border-accent transition overflow-hidden">
-                <div class="h-64 bg-gray-800 relative overflow-hidden flex items-center justify-center">
-                    <div class="card-dot-grid"></div>
-                    <span class="font-serif text-6xl text-gray-700 group-hover:text-accent transition">飛</span>
+        <div class="grid md:grid-cols-2 gap-6" data-repeat="team.members">
+            <template class="repeat-template">
+                <div class="bg-darkBg p-6 border border-gray-800">
+                    <span class="text-xs text-accent font-semibold tracking-widest block mb-2" data-copy="role"></span>
+                    <h4 class="font-bold text-lg mb-2" data-copy="name"></h4>
+                    <p class="text-sm text-gray-400 leading-relaxed" data-copy="bio"></p>
                 </div>
-                <div class="p-6">
-                    <span class="text-xs text-accent uppercase tracking-wider block mb-1">全体方針 / 厳しい仕掛けの実戦担当</span>
-                    <h4 class="font-serif text-xl font-bold mb-3">佐藤 宗一郎 <span class="text-xs font-sans text-gray-400 font-normal">/ Soichiro Sato</span></h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        元奨励会三段。序盤の構想や全体の進め方づくりから、厳しい仕掛けをぶつける実戦練習までを担当します。
-                    </p>
-                </div>
-            </div>
-
-            <div class="bg-darkBg border border-gray-800 group hover:border-accent transition overflow-hidden">
-                <div class="h-64 bg-gray-800 relative overflow-hidden flex items-center justify-center">
-                    <div class="card-dot-grid"></div>
-                    <span class="font-serif text-6xl text-gray-700 group-hover:text-accent transition">角</span>
-                </div>
-                <div class="p-6">
-                    <span class="text-xs text-accent uppercase tracking-wider block mb-1">手順検証 / 棋譜の整理・分析担当</span>
-                    <h4 class="font-serif text-xl font-bold mb-3">藤井 健太 <span class="text-xs font-sans text-gray-400 font-normal">/ Kenta Fujii</span></h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        試したい戦法・手順の検証や、棋譜の分岐を整理して「どこでどう判断すべきか」を見える化する役割を担います。
-                    </p>
-                </div>
-            </div>
-
-            <div class="bg-darkBg border border-gray-800 group hover:border-accent transition overflow-hidden">
-                <div class="h-64 bg-gray-800 relative overflow-hidden flex items-center justify-center">
-                    <div class="card-dot-grid"></div>
-                    <span class="font-serif text-6xl text-gray-700 group-hover:text-accent transition">桂</span>
-                </div>
-                <div class="p-6">
-                    <span class="text-xs text-accent uppercase tracking-wider block mb-1">終盤力 / 継続振り返り担当</span>
-                    <h4 class="font-serif text-xl font-bold mb-3">鈴木 玲子 <span class="text-xs font-sans text-gray-400 font-normal">/ Reiko Suzuki</span></h4>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        寄せや受けの速度感づくりと、無理なく続けられるペースでの定期的な振り返り・伴走を担当します。
-                    </p>
-                </div>
-            </div>
+            </template>
         </div>
     </div>
 </section>

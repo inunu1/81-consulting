@@ -1,25 +1,19 @@
-<section id="vision" class="py-24 border-b border-gray-800 bg-[#0e1322]">
+<section id="vision" class="py-24 border-b border-gray-800 bg-darkBg">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3">Our Value</h2>
-                <h3 class="font-serif text-3xl font-bold mb-6">本当に解くべき課題から入り、勝てる形を積み上げる。</h3>
-                <p class="text-gray-400 leading-relaxed">
-                    ただ対局数や問題数を増やすだけでは、伸び悩みの壁は越えにくいものです。どこに一番の負け筋があるのかを見極め、仮説を立てて小さく試し、実戦の負荷に耐えられる形へ整えていく――81 CONSULTINGは、そんな手順で棋力の底上げを支えます。
-                </p>
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-darkBg p-8 border border-gray-800">
-                    <span class="text-accent text-3xl font-bold mb-2 block">01</span>
-                    <h4 class="font-bold mb-2">仮説を立てて小さく試す</h4>
-                    <p class="text-sm text-gray-400">いきなり丸暗記に頼らず、自分の棋風に合う筋を仮説立てして実戦で確かめながら磨き込みます。</p>
+        <div class="mb-14">
+            <h2 class="text-xs tracking-[0.3em] text-accent uppercase font-semibold mb-3" data-copy="value.eyebrow">Why 81 CONSULTING</h2>
+            <h3 class="font-serif text-3xl font-bold" data-copy="value.heading">感覚と丸暗記から抜け出し、再現できる勝ち筋を作る</h3>
+            <p class="text-gray-400 text-sm mt-3 max-w-2xl" data-copy="value.lead"></p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6" data-repeat="value.points">
+            <template class="repeat-template">
+                <div class="bg-[#0e1322] p-6 border border-gray-800">
+                    <span class="text-xs text-accent font-semibold tracking-widest block mb-2" data-copy="num"></span>
+                    <h4 class="font-bold text-base mb-2" data-copy="title"></h4>
+                    <p class="text-sm text-gray-400 leading-relaxed" data-copy="body"></p>
                 </div>
-                <div class="bg-darkBg p-8 border border-gray-800 mt-6">
-                    <span class="text-accent text-3xl font-bold mb-2 block">02</span>
-                    <h4 class="font-bold mb-2">実戦の負荷と継続伴走</h4>
-                    <p class="text-sm text-gray-400">厳しい仕掛けを受ける実戦負荷と振り返りを続け、本番の空気でも崩れない判断軸を作ります。</p>
-                </div>
-            </div>
+            </template>
         </div>
     </div>
 </section>
