@@ -1,0 +1,68 @@
+:root {
+    --color-accent: #a100ff;
+    --color-dark-bg: #0b0f19;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-dark-bg);
+}
+
+body {
+    background-color: var(--color-dark-bg);
+    color: #f3f4f6;
+}
+
+.font-serif {
+    font-family: "Noto Serif JP", Georgia, serif;
+}
+
+.font-sans {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.bg-darkBg {
+    background-color: var(--color-dark-bg);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.bg-accent {
+    background-color: var(--color-accent);
+}
+
+.border-accent {
+    border-color: var(--color-accent);
+}
+
+.hover\:bg-accent:hover {
+    background-color: var(--color-accent);
+}
+
+.hover\:bg-purple-700:hover {
+    background-color: #7e00c9;
+}
+
+.hover\:text-accent:hover {
+    color: var(--color-accent);
+}
+
+.dot-grid-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background-image: radial-gradient(#a100ff 1px, transparent 1px);
+    background-size: 16px 16px;
+    pointer-events: none;
+}
+
+.card-dot-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    background-image: radial-gradient(#a100ff 1px, transparent 1px);
+    background-size: 12px 12px;
+    pointer-events: none;
+}
